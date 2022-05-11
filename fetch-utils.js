@@ -8,6 +8,11 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 // add a fetch function for your data
 
 export async function getDiscs() {
-    const response = await client.from('discs')
+    const response = await client.from('discs').select('*');
+    return response.data;
+}
+
+export async function getDisc(id) {
+    const response = await client.from('dogs').select('*').match({ id: id }).single();
     return response.data;
 }
