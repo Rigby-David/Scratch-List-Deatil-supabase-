@@ -33,7 +33,7 @@ export function renderDiscDetail(disc) {
 
     h1.textContent = disc.name;
 
-    img.src = `${disc.image}`;
+    img.src = `.${disc.image}`;
 
     p.textContent = `The ${disc.name} was designed by ${disc.manufacturer}. It has a speed of ${disc.speed}, glide of ${disc.glide}, turn of ${disc.turn}, and a fade of ${disc.fade}.`;
 

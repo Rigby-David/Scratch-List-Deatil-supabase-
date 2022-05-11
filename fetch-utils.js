@@ -13,6 +13,6 @@ export async function getDiscs() {
 }
 
 export async function getDisc(id) {
-    const response = await client.from('dogs').select('*').match({ id: id }).single();
+    const response = await client.from('discs').select('*').match({ id: id }).single();
     return response.data;
 }
