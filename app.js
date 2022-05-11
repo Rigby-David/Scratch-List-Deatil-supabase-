@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 
 import { getDiscs } from './fetch-utils.js';
+import { renderDiscHome } from './render-utils.js';
 
 // let state
 const discListEl = document.getElementById('discs');
@@ -10,7 +11,7 @@ async function loadData() {
 
 
     for (let disc of discs) {
-        const discDiv = renderDisc(disc);
+        const discDiv = renderDiscHome(disc);
         discListEl.append(discDiv);
     }
 }
