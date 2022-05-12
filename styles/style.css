@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
 }
 
 main {
@@ -37,10 +37,23 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url(../assets/mciver.webp);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    
 }
 
 section {
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,15 +63,17 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    /* border: solid 2px var(--color1); */
+    color: rgb(254, 254, 254);
+    font-size: 50px;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    /* background-color: var(--color3); */
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
 }
 
 
@@ -91,5 +106,17 @@ footer {
 }
 
 img {
-    height: 100px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#discs {
+    display: flex;
+}
+
+.disc-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
