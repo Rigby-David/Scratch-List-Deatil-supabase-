@@ -70,9 +70,10 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    /* background-color: var(--color3); */
+    justify-content: center;
+    background-color: #019b5f;
     height: var(--header-height);
+    font-size: 35px;
     /* box-shadow: var(--shadow); */
 }
 
