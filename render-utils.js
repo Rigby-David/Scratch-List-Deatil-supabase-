@@ -1,6 +1,3 @@
-// export function renderDisc(disc) {
-//     const div = 
-// }
 
 export function renderDiscHome(disc) {
     const div = document.createElement('div');
