@@ -25,6 +25,9 @@ export function renderDiscDetail(disc) {
     const h1 = document.createElement('h1');
     const img = document.createElement('img');
     const p = document.createElement('p');
+    const title = document.getElementById('title');
+
+    title.textContent = `${disc.name}`;
 
     div.classList.add('disc-detail');
 
